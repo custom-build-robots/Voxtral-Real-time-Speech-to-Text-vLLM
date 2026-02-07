@@ -26,7 +26,7 @@ Navigate to your project directory and create a Python virtual environment.
   ```bash
   mkdir ~/voxtral && cd ~/voxtral
   python3 -m venv venv
-  source venv/bin/activate
+  source venv/bin/activate```
 
 ### 3. Install Packages
 Install the nightly vLLM build and the required audio/UI libraries.
