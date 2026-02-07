@@ -26,14 +26,17 @@ Navigate to your project directory and create a Python virtual environment.
   ```bash
   mkdir ~/voxtral && cd ~/voxtral
   python3 -m venv venv
-  source venv/bin/activate```
+  source venv/bin/activate
+
+
+
 
 ### 3. Install Packages
 Install the nightly vLLM build and the required audio/UI libraries.
-
-pip install --upgrade pip
-pip install -U vllm --pre --extra-index-url [https://wheels.vllm.ai/nightly](https://wheels.vllm.ai/nightly)
-pip install gradio==5.15.0 websockets numpy soxr librosa soundfile mistral_common>=1.9.0
+  ```bash
+  pip install --upgrade pip
+  pip install -U vllm --pre --extra-index-url [https://wheels.vllm.ai/nightly](https://wheels.vllm.ai/nightly)
+  pip install gradio==5.15.0 websockets numpy soxr librosa soundfile mistral_common>=1.9.0
 
 ### 📂 File Structure
 Place these three files in your ~/voxtral/ directory:
@@ -49,12 +52,17 @@ Make scripts executable:
   chmod +x start_vllm.sh start_ui.sh
 
 
+
+
 ### 🚀 How to Run
 1. Launch the Backend (Inference)
 In your first terminal, start the vLLM server:
 
   ```bash
   ./start_vllm.sh
+
+
+
 
 Wait for the log: INFO: Uvicorn running on http://0.0.0.0:8000.
 
@@ -64,11 +72,18 @@ In a second terminal, start the web interface:
   ```bash
   ./start_ui.sh
 
+
+
+
 ### 3. Connect via SSH Tunnel (optional Remote Access)
 If you are accessing the server from a different location, open a terminal on your local computer:
 
   ```bash
   ssh -L 7634:localhost:7634 ingmar@<your-server-ip>
+
+
+
+
 
 ### 4. Open in Browser
 Visit http://localhost:7634. Note: You must use localhost so the browser permits microphone access over an unencrypted connection.
