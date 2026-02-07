@@ -37,7 +37,7 @@ Install the nightly vLLM build and the required audio/UI libraries.
   pip install --upgrade pip
   pip install -U vllm --pre --extra-index-url [https://wheels.vllm.ai/nightly](https://wheels.vllm.ai/nightly)
   pip install gradio==5.15.0 websockets numpy soxr librosa soundfile mistral_common>=1.9.0
-
+    
 ### 📂 File Structure
 Place these three files in your ~/voxtral/ directory:
 
@@ -50,7 +50,7 @@ start_ui.sh: Shell script to launch the Gradio frontend.
 Make scripts executable:
   ```bash
   chmod +x start_vllm.sh start_ui.sh
-
+    
 
 
 
