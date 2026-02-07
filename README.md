@@ -2,7 +2,7 @@
 
 This project implements a high-performance, real-time speech transcription system using the **Mistral Voxtral-Mini-4B-Realtime-2602** model. It is designed to run on NVIDIA GPU servers (specifically tested on dual RTX A6000s) and provides a low-latency Gradio web interface.
 
-
+[Mistral Voxtral-Mini Modell auf Hugging Face](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602)
 
 ## 🌟 Project Highlights
 * **True Real-time:** Continuous streaming transcription using Mistral's sliding-window attention architecture.
